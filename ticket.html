@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/Style.css" />
+    <link rel="stylesheet" href="./CSS/ticket.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="./Assets/Images/favicon-dark.png"
+      media="(prefers-color-scheme: dark)"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="./Assets/Images/favicon-light.png"
+      type="image/x-icon"
+      media="(prefers-color-scheme:light)"
+    />
+    <title>Festava Live | Book Your Ticket</title>
+  </head>
+
+  <body>
+    <header class="Ticket_header">
+      <div class="Welcome">
+        <div class="Welcome-content">
+          <i class="fa-regular fa-user"></i>
+          <p>Welcome to Music Festival 2023</p>
+        </div>
+      </div>
+      <nav>
+        <div class="Main-nav">
+          <div class="Nav-logo">
+            <a href="index.html">
+              <h5>Festava Live</h5>
+            </a>
+          </div>
+          <ul class="Nav-links">
+            <li>
+              <a href="index.html" class="ActiveLink">Home</a>
+            </li>
+            <li>
+              <a href="index.html">About</a>
+            </li>
+            <li>
+              <a href="index.html">Artists</a>
+            </li>
+            <li>
+              <a href="index.html">Schedule</a>
+            </li>
+            <li>
+              <a href="index.html">Pricing</a>
+            </li>
+            <li>
+              <a href="index.html">Contact</a>
+            </li>
+          </ul>
+          <div class="Nav-btn-Hamburger">
+            <div class="Nav-btn">
+              <button onclick="window.location.href='ticket.html'">
+                Buy Tickets
+              </button>
+            </div>
+            <div class="Hamburger">
+              <button onclick="HamburgerStyleChange()" id="HamburgerBtn">
+                <span id="Hamburger_bar_1"></span
+                ><span id="Hamburger_bar_2"></span
+                ><span id="Hamburger_bar_3"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="Ticket_Section">
+        <h2>Get Started Here</h2>
+        <div class="Ticket_Form">
+          <form action="">
+            <div class="form-input">
+              <input type="text" placeholder="Full Name" autofocus />
+            </div>
+            <div class="form-input">
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="form-input">
+              <input type="tel" name="" id="" placeholder="Ph 123 456-789" />
+            </div>
+            <h5>Choose Ticket Type</h5>
+            <div class="form-checkbox">
+              <div class="form-input-checkbox">
+                <input
+                  type="radio"
+                  name="radio"
+                  id="Early_bird"
+                  placeholder="Early Bird"
+                />
+                <label for="Early_bird">Early Bird</label>
+              </div>
+              <div class="form-input-checkbox">
+                <input
+                  type="radio"
+                  name="radio"
+                  id="Standard"
+                  placeholder="Standard Ticket"
+                />
+                <label for="Standard">Standard $240</label>
+              </div>
+            </div>
+            <div class="form-input">
+              <input
+                type="number"
+                name=""
+                id=""
+                placeholder="Enter the Number of Tickets"
+              />
+            </div>
+            <div class="form-input">
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Additional Request"
+              ></textarea>
+            </div>
+            <button>Buy Ticket</button>
+          </form>
+        </div>
+      </section>
+    </header>
+    <footer>
+      <div class="footer-top">
+        <div class="footer-top-content">
+          <h2>Festava Live</h2>
+          <div class="footer-social-icons">
+            <a href="">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-apple"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-main">
+        <div class="footer-main-section">
+          <div class="footer-section-1">
+            <h4>Links</h4>
+            <ul>
+              <li>
+                <a href="#Home">Home</a>
+              </li>
+              <li>
+                <a href="#About">About</a>
+              </li>
+              <li>
+                <a href="#Artist">Artists</a>
+              </li>
+              <li>
+                <a href="#Schedule">Schedule</a>
+              </li>
+              <li>
+                <a href="#Plans">Pricing</a>
+              </li>
+              <li>
+                <a href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section-2">
+            <h4>Have a Question?</h4>
+            <a href=""> 090-080-0760 </a>
+            <br />
+            <a href=""> hello@company.com </a>
+          </div>
+          <div class="footer-section-3">
+            <h4>Location</h4>
+            <address>
+              Silang Junction South, Tagaytay, Cavite, Philippines
+            </address>
+            <a href="">Our Map</a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="copyright-links">
+            <a href="">Terms & Condition</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Your Feedback</a>
+          </div>
+          <p>Copyright © Festava Live Company</p>
+        </div>
+      </div>
+    </footer>
+    <script defer src="./JS/Script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="./Assets/Images/favicon-dark.png"
+      media="(prefers-color-scheme: dark)"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="./Assets/Images/favicon-light.png"
+      media="(prefers-color-scheme:light)"
+      type="image/x-icon"
+    />
+    <title>Festava Live | Welcome</title>
+  </head>
+  <body>
+    <header>
+      <div class="Welcome">
+        <div class="Welcome-content">
+          <i class="fa-regular fa-user"></i>
+          <p>Welcome to Music Festival 2023</p>
+        </div>
+      </div>
+      <nav>
+        <div class="Main-nav">
+          <div class="Nav-logo">
+            <a href="index.html">
+              <h5>Festava Live</h5>
+            </a>
+          </div>
+          <ul class="Nav-links">
+            <li>
+              <a href="#Home" class="ActiveLink">Home</a>
+            </li>
+            <li>
+              <a href="#About">About</a>
+            </li>
+            <li>
+              <a href="#Artists">Artists</a>
+            </li>
+            <li>
+              <a href="#Schedule">Schedule</a>
+            </li>
+            <li>
+              <a href="#Plans">Pricing</a>
+            </li>
+            <li>
+              <a href="#Contact">Contact</a>
+            </li>
+          </ul>
+          <div class="Nav-btn-Hamburger">
+            <div class="Nav-btn">
+              <button onclick="window.location.href='ticket.html'">
+                Buy Tickets
+              </button>
+            </div>
+            <div class="Hamburger">
+              <button onclick="HamburgerStyleChange()" id="HamburgerBtn">
+                <span id="Hamburger_bar_1"></span
+                ><span id="Hamburger_bar_2"></span
+                ><span id="Hamburger_bar_3"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <video loop muted autoplay>
+        <source src="./Assets/Videos/music.mp4" type="" />
+      </video>
+      <section class="header-content" id="Home">
+        <div class="Main-heading">
+          <p>FESTAVA LIVE PRESENTS</p>
+          <h1>Night Live 2023</h1>
+        </div>
+        <div class="header-btn">
+          <button>Let's begin</button>
+        </div>
+        <div class="header-info">
+          <div class="header-info-section">
+            <h4>
+              <i class="fa-solid fa-clock"></i>
+              <!-- <i class="fa-light fa-clock"></i> -->
+              10 - 12th, Dec 2023
+            </h4>
+          </div>
+          <div class="header-info-section">
+            <h4>
+              <i class="fa-solid fa-location-dot"></i> National Center, United
+              States
+            </h4>
+          </div>
+          <div class="header-info-section">
+            <p>Share:</p>
+            <a href="">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- About US Section -->
+    <section class="AboutUs" id="About">
+      <div class="AboutUs-main">
+        <div class="AboutUs_left">
+          <h2>About Festava 2022</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+            quasi assumenda obcaecati fugiat consequuntur nisi ut dolor quia sit
+            iusto praesentium. Quibusdam necessitatibus laborum corporis?
+          </p>
+          <h5>Once in Lifetime Experience</h5>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+            obcaecati eius necessitatibus minus ipsam itaque.
+          </p>
+          <h5>Whole Night Party</h5>
+          <p>Please tell your friends about our website. Thank you.</p>
+        </div>
+        <div class="AboutUs_right">
+          <div class="AboutUs_img">
+            <img
+              src="./Assets/Images/About_section_img.jpg"
+              loading="lazy"
+              alt=""
+            />
+            <div class="AboutUs-text-info">
+              <div class="About-text-user">
+                <i class="fa-regular fa-user"></i>
+              </div>
+              <div class="About-text-description">
+                <h4>a happy moment</h4>
+                <p>your amazing festival experience with us</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Artis Section -->
+    <section class="Artists" id="Artists">
+      <h2>Meet Artists</h2>
+      <div class="Artists-main">
+        <div class="Artists_img-1 Artists_img">
+          <img src="./Assets/Images/Artist_img1.jpg" loading="lazy" alt="" />
+          <div class="Artists-info">
+            <div class="Artists-info-main">
+              <p>
+                <strong>Name</strong>
+                Rehana
+              </p>
+              <p>
+                <strong>Birthday</strong>
+                Feb 20, 1988
+              </p>
+              <p>
+                <strong>Music</strong>
+                Country
+              </p>
+
+              <div class="divider"></div>
+              <p>
+                <strong>Youtube Channel</strong>
+                <a href="">Rihana Official</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="Artists_img-2 Artists_img">
+          <img src="./Assets/Images/Artist_img2.jpg" loading="lazy" alt="" />
+          <div class="Artists-info">
+            <div class="Artists-info-main">
+              <p>
+                <strong>Name</strong>
+                Madana
+              </p>
+              <p>
+                <strong>Birthday</strong>
+                August 16, 1958
+              </p>
+              <p>
+                <strong>Music</strong>
+                Pop,R&B
+              </p>
+              <div class="divider"></div>
+              <p>
+                <strong>Youtube Channel</strong>
+                <a href="">Madana Official</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="Artists_img-3 Artists_img">
+          <img src="./Assets/Images/Artist_img3.jpg" loading="lazy" alt="" />
+          <div class="Artists-info">
+            <div class="Artists-info-main">
+              <p>
+                <strong>Name</strong>
+                Bruno Bros
+              </p>
+              <p>
+                <strong>Birthday</strong>
+                October 8, 1985
+              </p>
+              <p>
+                <strong>Music</strong>
+                PoP
+              </p>
+              <div class="divider"></div>
+              <p>
+                <strong>Youtube Channel</strong>
+                <a href="">Bruno Official</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Event_Schedule" id="Schedule">
+      <h2>Event Schedule</h2>
+      <div class="Event_Schedule_main">
+        <table class="Event_table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="table_row_1">
+              <th>Day 1</th>
+              <td class="table_img1 table_content">
+                <h3>Pop Music</h3>
+                <p>05:00-7:00PM</p>
+                <p>By Adele</p>
+              </td>
+              <td></td>
+              <td class="table_img2 table_content">
+                <h3>Rock & Roll</h3>
+                <p>07:00-11:00PM</p>
+                <p>By Rihana</p>
+              </td>
+            </tr>
+            <tr class="table_row_2">
+              <th>Day 2</th>
+              <td></td>
+              <td class="table_content">
+                <h3>DJ Night</h3>
+                <p>06:30-9:30PM</p>
+                <p>By Riahan</p>
+              </td>
+              <td></td>
+            </tr>
+            <tr class="table_row_3">
+              <th>Day 3</th>
+              <td class="table_img3 table_content">
+                <h3>Country Music</h3>
+                <p>04:30-9:30PM</p>
+                <p>By Bruno</p>
+              </td>
+              <td></td>
+              <td class="table_content">
+                <h3>Free Style</h3>
+                <p>06:00-10:00PM</p>
+                <p>By Members</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="Plans" id="Plans">
+      <h2>Plans, you' love</h2>
+      <div class="Plans-main">
+        <div class="Plans-left">
+          <div class="Plans-sale">
+            <small>Save upto</small>
+            <h6>50%</h6>
+          </div>
+          <div class="Plans-top">
+            <h3>
+              <small>Early Bird</small>
+              $120
+            </h3>
+          </div>
+          <p>Include good Things</p>
+          <ul>
+            <li>platform for potential customers</li>
+            <li>digital experience</li>
+            <li>high-quality sound</li>
+            <li>standard content</li>
+          </ul>
+          <a href=""> Buy Tickets </a>
+        </div>
+        <div class="Plans-right">
+          <div class="Plans-top">
+            <h3>
+              <small>Standard Plan</small>
+              $240
+            </h3>
+          </div>
+          <p>Include good Things</p>
+          <ul>
+            <li>platform for potential customers</li>
+            <li>digital experience</li>
+            <li>high-quality sound</li>
+            <li>standard content</li>
+            <li>premium content</li>
+            <li>live chat support</li>
+          </ul>
+          <a href=""> Buy Tickets </a>
+        </div>
+      </div>
+    </section>
+    <section class="Contact" id="Contact">
+      <h2>Interested? Let's talk</h2>
+      <div class="Contact-main">
+        <div class="Contact-tabs">
+          <button
+            onclick="ContactTab(event,'Form') "
+            class="Tab-btn"
+            id="defaultOpenTab"
+          >
+            Contact Form
+          </button>
+          <button onclick="ContactTab(event,'Map')" class="Tab-btn">
+            Google Maps
+          </button>
+        </div>
+        <div class="Contact-Form Tab-Content" id="Form">
+          <form action="">
+            <sdiv class="form-top-input">
+              <div class="form-input">
+                <input type="text" placeholder="Full Name" />
+              </div>
+              <div class="form-input">
+                <input type="text" placeholder="Email address" />
+              </div>
+            </sdiv>
+            <div class="form-input">
+              <input type="text" placeholder="Company" />
+            </div>
+            <div class="form-input">
+              <textarea
+                placeholder="Message"
+                name=""
+                id=""
+                cols="30"
+                rows="30"
+              ></textarea>
+            </div>
+            <button>Send Message</button>
+          </form>
+        </div>
+        <div class="Contact-Map Tab-Content" id="Map">
+          <iframe
+            class="google-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29974.469402870927!2d120.94861466021855!3d14.106066818082482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd777b1ab54c8f%3A0x6ecc514451ce2be8!2sTagaytay%2C%20Cavite%2C%20Philippines!5e1!3m2!1sen!2smy!4v1670344209509!5m2!1sen!2smy"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-top">
+        <div class="footer-top-content">
+          <h2>Festava Live</h2>
+          <div class="footer-social-icons">
+            <a href="">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-apple"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-main">
+        <div class="footer-main-section">
+          <div class="footer-section-1">
+            <h4>Links</h4>
+            <ul>
+              <li>
+                <a href="#Home">Home</a>
+              </li>
+              <li>
+                <a href="#About">About</a>
+              </li>
+              <li>
+                <a href="#Artist">Artists</a>
+              </li>
+              <li>
+                <a href="#Schedule">Schedule</a>
+              </li>
+              <li>
+                <a href="#Plans">Pricing</a>
+              </li>
+              <li>
+                <a href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section-2">
+            <h4>Have a Question?</h4>
+            <a href=""> 090-080-0760 </a>
+            <br />
+            <a href=""> hello@company.com </a>
+          </div>
+          <div class="footer-section-3">
+            <h4>Location</h4>
+            <address>
+              Silang Junction South, Tagaytay, Cavite, Philippines
+            </address>
+            <a href="">Our Map</a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="copyright-links">
+            <a href="">Terms & Condition</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Your Feedback</a>
+          </div>
+          <p>Copyright © Festava Live Company</p>
+        </div>
+      </div>
+    </footer>
+    <script defer src="./JS/Script.js"></script>
+  </body>
+</html>
