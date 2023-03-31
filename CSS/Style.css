@@ -885,7 +885,7 @@ form button {
     flex-direction: column;
     transition: all 0.4s linear;
   }
-   .Nav-links-show {
+   .Main-nav .Nav-links-show {
     width: 60%;
   }
   .Main-nav .Nav-links li a {
@@ -995,7 +995,7 @@ form button {
   .Main-nav .Nav-links {
     height: 80%;
   }
-   .Nav-links-show {
+   .Main-nav .Nav-links-show {
     width: 70%;
   }
   .Nav-btn {
