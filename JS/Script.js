@@ -18,12 +18,53 @@ let HamburgerStyleChange = () => {
   }
 };
 
+//? Throttle Resize Event
+function throttleOnResize(callback, delay) {
+  let timerId;
+  return () => {
+    if (!timerId) {
+      timerId = setTimeout(() => {
+        timerId = null;
+        callback();
+      }, delay);
+    }
+  };
+}
+
+window.addEventListener(
+  "resize",
+  throttleOnResize(() => {
+    document
+      .getElementById("Hamburger_bar_1")
+      .classList.remove("Hamburger_bar_1");
+    document
+      .getElementById("Hamburger_bar_2")
+      .classList.remove("Hamburger_bar_2");
+    document
+      .getElementById("Hamburger_bar_3")
+      .classList.remove("Hamburger_bar_3");
+    navlinks.classList.remove("Nav-links-show");
+    let matchmedia = window.matchMedia("(max-width:540px)");
+    if (matchmedia.matches) {
+      document.querySelector(".Nav-btn").classList.remove("Nav-btn-show");
+    }
+  }, 400)
+);
+
 //!Click Outside Detector to hide Navbar when open in Small Devices
 
 document.addEventListener(
   "click",
   (e) => {
-    if (e.target.className !== "Nav-links" && e.target.id !== "HamburgerBtn") {
+    if (
+      e.target.className !== "Nav-links" &&
+      e.target.id !== "HamburgerBtn" &&
+      e.target.className !== "Nav-btn "
+    ) {
+      let matchmedia = window.matchMedia("(max-width:540px)");
+      if (matchmedia.matches) {
+        document.querySelector(".Nav-btn").classList.remove("Nav-btn-show");
+      }
       navlinks.classList.remove("Nav-links-show");
       document
         .getElementById("Hamburger_bar_1")
@@ -66,9 +107,7 @@ window.addEventListener("scroll", () => {
 
 //*Navigate to homepage if on Another Page
 
-navlinks.addEventListener("click", (e) => {
-  
-});
+navlinks.addEventListener("click", (e) => {});
 
 //? Tabs Section
 let contactform = document.querySelector(".Contact-Form");

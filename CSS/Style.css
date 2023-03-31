@@ -157,9 +157,9 @@ nav .Main-nav {
   flex-direction: column;
   width: 60px;
   align-items: center;
-  row-gap: 10px;
+  row-gap: 7px;
   justify-content: center;
-  height: 40px;
+  height: 50px;
   background-color: transparent;
 }
 .Hamburger button span {
@@ -885,7 +885,7 @@ form button {
     flex-direction: column;
     transition: all 0.4s linear;
   }
-  .Main-nav .Nav-links-show {
+   .Nav-links-show {
     width: 60%;
   }
   .Main-nav .Nav-links li a {
@@ -995,7 +995,7 @@ form button {
   .Main-nav .Nav-links {
     height: 80%;
   }
-  .Main-nav .Nav-links-show {
+   .Nav-links-show {
     width: 70%;
   }
   .Nav-btn {

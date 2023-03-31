@@ -4,7 +4,8 @@ header {
 }
 
 .Ticket_Section {
-  width: clamp(40%, 40%, 70%);
+  /* width: clamp(40%, 40%, 70%); */
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,4 +54,18 @@ header {
 .Ticket_Form textarea {
   width: 100%;
   padding: 15px;
+}
+@media (width<=1024px) {
+  .Ticket_Section {
+    width: 80%;
+  }
+  .form-checkbox {
+    flex-direction: column;
+    height: max-content;
+    align-items: center;
+    row-gap: 20px;
+  }
+  .form-input-checkbox {
+    width: 90%;
+  }
 }
